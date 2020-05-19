@@ -7,5 +7,20 @@
         android:id="@+id/mainFragment"
         android:name="com.example.navofthrones.MainFragment"
         android:label="main_fragment"
-        tools:layout="@layout/main_fragment" />
+        tools:layout="@layout/main_fragment" >
+        <action
+            android:id="@+id/action_mainFragment_to_rhaegarFragment"
+            app:destination="@id/rhaegarFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_lyannaFragment"
+            app:destination="@id/lyannaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lyannaFragment"
+        android:name="com.example.navofthrones.LyannaFragment"
+        android:label="LyannaFragment" />
+    <fragment
+        android:id="@+id/rhaegarFragment"
+        android:name="com.example.navofthrones.RhaegarFragment"
+        android:label="RhaegarFragment" />
 </navigation>
