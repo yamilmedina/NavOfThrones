@@ -18,9 +18,26 @@
     <fragment
         android:id="@+id/lyannaFragment"
         android:name="com.example.navofthrones.LyannaFragment"
-        android:label="LyannaFragment" />
+        android:label="LyannaFragment" >
+        <action
+            android:id="@+id/action_lyannaFragment_to_jonSnowFragment"
+            app:destination="@id/jonSnowFragment" />
+    </fragment>
     <fragment
         android:id="@+id/rhaegarFragment"
         android:name="com.example.navofthrones.RhaegarFragment"
-        android:label="RhaegarFragment" />
+        android:label="RhaegarFragment" >
+        <action
+            android:id="@+id/action_rhaegarFragment_to_jonSnowFragment"
+            app:destination="@id/jonSnowFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jonSnowFragment"
+        android:name="com.example.navofthrones.JonSnowFragment"
+        android:label="JonSnowFragment" >
+        <argument
+            android:name="whoami"
+            app:argType="string"
+            android:defaultValue="No one" />
+    </fragment>
 </navigation>
